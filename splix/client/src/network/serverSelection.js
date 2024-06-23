@@ -1,7 +1,7 @@
 const serverSelectEl = /** @type {HTMLSelectElement} */ (document.getElementById("serverSelect"));
 export async function initServerSelection() {
 	let endPoint;
-	if (!IS_DEV_BUILD) {
+	if (true) {
 		endPoint = "https://splix.io/gameservers";
 	} else {
 		const url = new URL(location.href);
